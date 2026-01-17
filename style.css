@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171619;
+    min-height: 100dvh;
+    color: white;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: clamp(8px, 2vw, 20px);
+
+    background: url("/imgs/bordano.png") center no-repeat;
+    background-size: 1860px 885px;
+
+    pointer-events: none;
+    z-index: 1000;
+    }
+.frame {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    background: linear-gradient(
+    #171619 10%,
+    #BF93D8 90%
+  );
+}
+
+.aboutme {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+
+    background-color: #171619;
+    height: 745px;
+    width: 800px;
+    border-radius: 45px;
+    box-shadow: rgba(230, 205, 253, 0.438) 0px 0px 20px 15px;
+}
+header {
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+    
+}
+
+#gaby {
+    height: 170px;
+}
+
+article#contacts {
+    order: 1;
+    margin-left: 130px;
+    
+
+}
+article#rendabox {
+    order: 2;
+    height: 500px;
+    width: 391px;
+    margin-top: 20px;
+
+    display: flex;
+}
+
+article#rendabox img{
+   align-items: center;
+}
+
+article#softwares {
+    order: 3;
+
+}
+
+article#gifpixel {
+    order: 4;
+}
+
+
