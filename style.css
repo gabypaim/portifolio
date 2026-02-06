@@ -1,27 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "alagard";
+    src: url("assets/alagard.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: "digitaldisco";
+    src: url(assets/DigitalDisco.ttf) format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: digitaldisco, Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: #171619;
     min-height: 100dvh;
     color: white;
+    
 }
-
 
 body::before {
     content: "";
     position: fixed;
     inset: clamp(8px, 2vw, 20px);
-
-    background: url("/imgs/bordano.png") center no-repeat;
+    background: url("/assets/bordano.png") center no-repeat;
     background-size: 1860px 885px;
 
     pointer-events: none;
     z-index: 1000;
     }
+
 .frame {
     min-height: 100dvh;
     display: flex;
@@ -32,60 +51,189 @@ body::before {
 #projects {
     background: linear-gradient(
     #171619 10%,
-    #BF93D8 90%
+    #f3e8fa 90%
   );
 }
 
 .aboutme {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 180px 2fr  2fr;
+    grid-auto-flow: column;
+    
+    max-width: 850px;
+    height: 760px;
 
+    padding: 30px;
     background-color: #171619;
-    height: 745px;
-    width: 800px;
     border-radius: 45px;
     box-shadow: rgba(230, 205, 253, 0.438) 0px 0px 20px 15px;
 }
 header {
-    display: flex;
-    align-self: flex-start;
-    gap: 20px;
-    
+    display: grid;
+    grid-template: 50% 45% / 35% 65%;
+    gap: 5px;
 }
 
-#gaby {
-    height: 170px;
+header img {
+   height: 170px;
+   grid-area: 1/1/2/3;
+}
+
+header h1{
+    grid-area: 1/2/2/3;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: alagard;
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+header h2 {
+    grid-area: 2/2/3/3;
+    text-align: justify;
+    margin-left: 50px;
+    font-family: digitaldisco;
+    font-weight: lighter;
+    font-size: 28px;
 }
 
 article#contacts {
-    order: 1;
-    margin-left: 130px;
-    
-
+    grid-area: 1/2/2/-1;
+   
 }
-article#rendabox {
-    order: 2;
-    height: 500px;
-    width: 391px;
+
+#contacts > h2 {
+    text-align:  center;
+    color: #BF93D8;
+    font-family: alagard;
+    font-size: 28px;
     margin-top: 20px;
-
-    display: flex;
+    font-weight: lighter;
+}
+#contacts img {
+    margin-left: 45px;
+    margin-top: 10px; 
+    
 }
 
-article#rendabox img{
-   align-items: center;
+#contacts label {
+    font-family: digitaldisco;
+    
+    
+}
+
+#rendabox {
+    position: relative;
+    grid-area: 2/1/-1/2;
+    
+}
+
+#rendabox img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#rendabox > *:not(img) {
+    position: relative;
+    z-index: 1;
+}
+
+#rendabox h1 {
+    margin-top: 115px;
+    padding: 0px 30px;
+    color: #BF93D8;
+    font-family: alagard;
+    font-weight: 50;
+    font-size: 28px;
+
+}
+
+#rendabox p {
+    margin-top: 15px;
+    padding: 0px 30px;
+    text-align: justify;
+    color: #171619;
+    font-family: digitaldisco;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+#rendabox h2 {
+    margin-top: 15px;
+    padding: 5px 30px;
+    color: #BF93D8;
+    font-family: alagard;
+    font-weight: 50;
+    font-size: 28px;
+
 }
 
 article#softwares {
-    order: 3;
+   grid-area: 2/2/3/-1;
+    
+}
+.text  {
+    text-align: center;
+    margin-bottom: 5px;
+}
 
+.text h2 {
+    text-align:  center;
+    color: #BF93D8;
+    font-family: alagard;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.items {
+    position: relative;
+    display: grid;
+    grid-template: repeat(2, 45px) /repeat(4, 45px);
+    gap: 15px;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 357px;
+    height: 201px;
+    
+    
+}
+.items img {
+    position: relative;
+    z-index: 2;
+    image-rendering: optimizeQuality;
+}
+
+#ornamento {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 article#gifpixel {
-    order: 4;
+    grid-area: 3/2/4/-1;
+    text-align: center;
+    
+}
+
+#gifpixel > img {
+    image-rendering: pixelated;
+    width: 280px;
+    border-radius: 25px;
+    
+    
+    
 }
 
 
