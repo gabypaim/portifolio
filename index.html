@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="intro">
+        <img src="assets/hi-export.gif" id="bear">
+        <p class="hint">click</p>
+    </div>
+
     <section class="frame">
         <main class="aboutme">
 
@@ -15,7 +21,7 @@
 
                 <h1>Gaby</h1>
                     
-                <h2>Ux / Ui designer</h2>
+                <h2>UX <span>/</span> UI & Creative Software</h2>
             
                 
             </header>
@@ -72,9 +78,29 @@
     </section>
 
     <section class="frame" id="projects">
-        <main class="proje"></main>
+        <article class="proje">
+            <h1>Projetos Pessoais</h1>
+            <div class="video"> <img src="assets/caketimervid.gif" alt=""></div>
+            <div class="text2">
+                <h1>Caketimer</h1>
+                <h2>desktop widget</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, sapiente. Maiores similique provident commodi. Explicabo tempore praesentium expedita, dolorem sapiente omnis ea harum, veritatis officia dicta, rerum eaque reprehenderit nemo.</p>
+            </div>
+        </article>
     </section>
 
-    
 </body>
+
+<script>
+const intro = document.getElementById("intro");
+
+intro.addEventListener("click", () => {
+    intro.classList.add("hide");
+
+    setTimeout(() => {
+        intro.remove();
+    }, 800);
+});
+</script>
+
 </html>
