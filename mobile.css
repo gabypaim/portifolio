@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px) {
+
+/* DESLIGA SNAP */
+html {
+    scroll-snap-type: none;
+}
+
+body::before {
+    display: none;
+}
+
+
+.frame {
+    padding: 18px 14px;
+}
+
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    max-width: 100%;
+    min-height: auto;
+    padding: 22px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+header img {
+    height: 120px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+#contacts {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+#softwares {
+    width: 100%;
+}
+
+.items {
+    margin: auto;
+    width: 60%;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 15px;
+}
+
+.items img {
+    width: 44px;
+}
+
+#ornamento {
+    display: none;
+}
+
+.renda-conteudo{
+    display:none;
+}
+
+.renda-mobile{
+    display:block;
+    width:100%;
+}
+
+#rendabox{
+    background:none;
+    padding:0;
+}
+
+#gifpixel img {
+  display: none;
+}
+
+
+#bear {
+    width: 70vw;
+    max-width: 320px;
+}
+
+/* PROJETOS */
+.proje {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 100%;
+    min-height: auto;
+}
+
+.proje > h1 {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.video img {
+    width: 100%;
+}
+
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+.text2 h1 {
+    font-size: 2em;
+}
+
+.text2 h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.resumocake p {
+    font-size: 1.05em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.resumocake button {
+    width: 100%;
+    max-width: 260px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+}

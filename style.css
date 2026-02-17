@@ -32,7 +32,7 @@ html {
 
 body {
     background-color: #171619;
-    min-height: 100dvh;
+    min-height: 100svh;
     color: white;
     
 }
@@ -83,7 +83,7 @@ body::before {
 }
 
 .frame {
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,8 +98,10 @@ body::before {
     grid-template-rows: 180px 2fr  2fr;
     grid-auto-flow: column;
     
-    max-width: 850px;
-    height: 760px;
+    
+    min-height: 760px;
+    height: auto;
+
 
     padding: 30px;
     background-color: #171619;
@@ -163,18 +165,27 @@ article#contacts {
 #rendabox {
     position: relative;
     grid-area: 2/1/-1/2;
-    
+    overflow: hidden;
+    background: #d9d4dd00;
 }
 
-#rendabox img{
+
+.renda-conteudo > img {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     z-index: 0;
+    pointer-events: none;
 }
 
-#rendabox > *:not(img) {
+.renda-mobile{
+    display:none;
+}
+
+
+.renda-conteudo > *:not(img) {
     position: relative;
     z-index: 1;
 }
@@ -289,7 +300,7 @@ article#gifpixel {
 
     
     max-width: 950px;
-    height: 760px;
+    min-height: 760px;
 
     padding: 30px;
     border-radius: 45px;
