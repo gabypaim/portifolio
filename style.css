@@ -41,7 +41,7 @@ body::before {
     content: "";
     position: fixed;
     inset: clamp(8px, 2vw, 20px);
-    background: url("/assets/bordano.png") center no-repeat;
+    background: url("assets/bordano.png") center no-repeat;
     background-size: 1860px 885px;
     
 
