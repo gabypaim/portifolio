@@ -292,7 +292,7 @@ article#gifpixel {
 
 /*Projetos*/
 
-.proje {
+#proje {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 130px 500px ;
@@ -313,7 +313,7 @@ article#gifpixel {
     margin-left: 15px;
 }
 
-.proje h1 {
+#projeh1 {
     grid-area: 1/1/2/-1;
     font-size: 6em;
     text-align: center;
@@ -337,6 +337,7 @@ article#gifpixel {
     grid-area: 1/1/2/2;
     font-size: 3em;
     text-align: left;
+    
     
 
 }
@@ -379,4 +380,52 @@ button:hover {
     transform: scale(1.07);
     transition: transform 0.2s ease; 
     cursor: pointer;
+}
+
+#dress {
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px ;
+    gap: 45px;
+
+    
+    max-width: 950px;
+    min-height: 760px;
+
+    padding: 30px;
+    border-radius: 45px;
+}
+
+#dresstext {
+    grid-area:  1/2/-1/-1;
+    display: grid;
+    grid-template: 10% 90% / 1fr 1fr;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+#dresstext h1 {
+    grid-area: 1/1/2/2;
+    font-size: 3em;
+    text-align: left;
+}
+#dresstext h2 {
+    grid-area: 1/2/2/-1;
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+#video {
+    grid-area: 1/1/-1/2;
+    
+    justify-items: center;
+    text-align: left;
+}
+
+#video img {
+    border-radius: 20px;
 }
