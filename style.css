@@ -222,16 +222,13 @@ article#softwares {
    grid-area: 2/2/3/-1;
     
 }
-.text  {
-    text-align: center;
-    margin-bottom: 5px;
-}
 
-.text h2 {
+.skill h2 {
     text-align:  center;
     color: #BF93D8;
     font-weight: lighter;
     font-size: 28px;
+    margin-bottom: 5px;
 }
 
 .items {
@@ -302,7 +299,7 @@ article#gifpixel {
     border-radius: 45px;
 }
 
-.text2 {
+.textcake {
     display: grid;
     grid-template: 10% 90% / 1fr 1fr;
     gap: 20px;
@@ -317,19 +314,19 @@ article#gifpixel {
     
 }
 
-.video {
+.cake {
     grid-area: 2/1/-1/2;
     
     justify-items: center;
     text-align: left;
 }
 
-.video img {
+.cake img {
     border-radius: 20px;
 }
 
 
-.text2 h1 {
+.textcake h1 {
     grid-area: 1/1/2/2;
     font-size: 3em;
     text-align: left;
@@ -337,7 +334,7 @@ article#gifpixel {
     
 
 }
-.text2 h2 {
+.textcake h2 {
     grid-area: 1/2/2/-1;
     font-size: 1.1em;
     text-align: right;
@@ -346,20 +343,20 @@ article#gifpixel {
     
 }
 
-.resumocake {
+.resumo {
     grid-area: 2/1/-1/-1;
     text-align: left;
     
 }
 
-.resumocake p {
+.resumo p {
     margin-top: 15px;
     font-family: digitaldisco;
     line-height: 23px;
     font-size: 1.4em;
 }
 
-.resumocake button {
+.resumo button {
     margin-top: 20px;
     width: 200px;
     height: 50px;
@@ -378,7 +375,7 @@ button:hover {
     cursor: pointer;
 }
 
-#dress {
+.projetos {
     justify-content: center;
     align-content: center;
     display: grid;
@@ -394,7 +391,7 @@ button:hover {
     border-radius: 45px;
 }
 
-#dresstext {
+.projetext {
     grid-area:  1/2/-1/-1;
     display: grid;
     grid-template: 10% 90% / 1fr 1fr;
@@ -402,12 +399,12 @@ button:hover {
     margin-left: 15px;
 }
 
-#dresstext h1 {
+.projetext h1 {
     grid-area: 1/1/2/2;
     font-size: 3em;
     text-align: left;
 }
-#dresstext h2 {
+.projetext h2 {
     grid-area: 1/2/2/-1;
     font-size: 1.1em;
     text-align: right;
@@ -415,13 +412,13 @@ button:hover {
     font-weight: lighter;
 }
 
-#video {
+.video {
     grid-area: 1/1/-1/2;
     
     justify-items: center;
     text-align: left;
 }
 
-#video img {
+.video img {
     border-radius: 20px;
 }
