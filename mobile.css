@@ -61,10 +61,11 @@ header h2 {
 
 .items {
     margin: auto;
-    width: 60%;
+    width: 100%;
+    max-width: 260px;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .items img {
@@ -100,26 +101,28 @@ header h2 {
 }
 
 /* PROJETOS */
-.proje {
+#proje,
+#dress {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     max-width: 100%;
     min-height: auto;
 }
 
-.proje > h1 {
-    font-size: 2.4em;
+#projeh1 {
+    font-size: 2.2em;
     text-align: center;
 }
 
-.video img {
+.video img,
+#video img {
     width: 100%;
+    border-radius: 20px;
 }
 
-
-.text2 {
+.text2,
+#dresstext {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -127,26 +130,41 @@ header h2 {
     margin: 0;
 }
 
-.text2 h1 {
-    font-size: 2em;
+.text2 h1,
+#dresstext h1 {
+    font-size: 1.8em;
 }
 
-.text2 h2 {
+.text2 h2,
+#dresstext h2 {
     font-size: 1em;
     margin: 0;
 }
 
-.resumocake p {
-    font-size: 1.05em;
-    line-height: 1.4em;
+.resumocake {
     text-align: center;
+}
+
+.resumocake p {
+    margin-top: 12px;
+    font-family: digitaldisco;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 .resumocake button {
     width: 100%;
     max-width: 260px;
-    margin: auto;
-    margin-top: 10px;
+    margin: 16px auto 0 auto;
+    transition: transform 0.2s ease;
 }
 
+#dress {
+    margin-top: 40px;
 }
+
+
+}
+
+
+

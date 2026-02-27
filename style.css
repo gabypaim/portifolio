@@ -5,6 +5,7 @@
     src: url("assets/alagard.ttf") format("truetype");
     font-weight: lighter;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -13,6 +14,7 @@
     src: url(assets/DigitalDisco.ttf) format("truetype");
     font-weight: lighter;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -66,7 +68,7 @@ body::before {
 
 
 #bear {
-    width: 900px;
+    width: clamp(250px, 60vw, 900px);
     image-rendering: pixelated;
     animation: idle 1.8s infinite ease-in-out;
 }
@@ -124,7 +126,6 @@ header h1{
     text-align: justify;
     margin-left: 35px;
     margin-top: 20px;
-    font-family: alagard;
     font-weight: lighter;
     font-size: 35px;
 }
@@ -132,7 +133,6 @@ header h1{
 header h2 {
     grid-area: 2/2/3/3;
     margin-left: 35px;
-    font-family: alagard;
     font-weight: lighter;
     font-size: 25px;
 }
@@ -147,7 +147,6 @@ article#contacts {
 #contacts > h2 {
     text-align:  center;
     color: #BF93D8;
-    font-family: alagard;
     font-size: 28px;
     margin-top: 20px;
     font-weight: lighter;
@@ -194,7 +193,6 @@ article#contacts {
     margin-top: 89px;
     padding: 0px 30px;
     color: #BF93D8;
-    font-family: alagard;
     font-weight: 50;
     font-size: 28px;
 
@@ -215,7 +213,6 @@ article#contacts {
     margin-top: 15px;
     padding: 5px 30px;
     color: #BF93D8;
-    font-family: alagard;
     font-weight: lighter;
     font-size: 28px;
 
@@ -233,7 +230,6 @@ article#softwares {
 .text h2 {
     text-align:  center;
     color: #BF93D8;
-    font-family: alagard;
     font-weight: lighter;
     font-size: 28px;
 }
