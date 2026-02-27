@@ -18,7 +18,7 @@ body::before {
 .aboutme {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 5px;
 
     max-width: 100%;
     min-height: auto;
@@ -52,11 +52,13 @@ header h2 {
 #contacts {
     text-align: center;
     margin: 10px 0;
+    order: 3;
 }
 
 
 #softwares {
     width: 100%;
+    order: 2;
 }
 
 .items {
@@ -65,7 +67,7 @@ header h2 {
     max-width: 260px;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 12px;
+    gap: 5px;
 }
 
 .items img {
@@ -88,6 +90,7 @@ header h2 {
 #rendabox{
     background:none;
     padding:0;
+    order: 2;
 }
 
 #gifpixel img {
@@ -96,13 +99,13 @@ header h2 {
 
 
 #bear {
-    width: 70vw;
+    width: 80vw;
     max-width: 320px;
 }
 
 /* PROJETOS */
 #proje,
-#dress {
+.projetos {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -116,50 +119,59 @@ header h2 {
 }
 
 .video img,
-#video img {
+.cake img {
     width: 100%;
     border-radius: 20px;
 }
 
-.text2,
-#dresstext {
+.projetext,
+.textcake {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0px;
     text-align: center;
     margin: 0;
 }
 
-.text2 h1,
-#dresstext h1 {
+.textcake h1,
+.projetext h1 {
     font-size: 1.8em;
+    gap: 0px;
+    
+   
 }
 
-.text2 h2,
-#dresstext h2 {
+.textcake h2,
+.projetext h2 {
     font-size: 1em;
     margin: 0;
+    gap: 0px;
+    align-self: flex-start;
+    text-indent: 5px;
+    color: #BF93D8;
+    
+   
 }
 
-.resumocake {
+.resumo {
     text-align: center;
 }
 
-.resumocake p {
+.resumo p {
     margin-top: 12px;
     font-family: digitaldisco;
     font-size: 1em;
     line-height: 1.5em;
 }
 
-.resumocake button {
+.resumo button {
     width: 100%;
     max-width: 260px;
     margin: 16px auto 0 auto;
     transition: transform 0.2s ease;
 }
 
-#dress {
+.projetos {
     margin-top: 40px;
 }
 
