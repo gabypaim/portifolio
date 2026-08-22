@@ -92,8 +92,6 @@ body::before {
     scroll-snap-align: start;
 }
 
-
-
 .aboutme {
     display: grid;
     grid-template-columns: 450px auto;
@@ -117,8 +115,9 @@ header {
 }
 
 header img {
-   height: 170px;
+   height: 180px;
    grid-area: 1/1/2/3;
+   image-rendering: pixelated;
 }
 
 header h1{
