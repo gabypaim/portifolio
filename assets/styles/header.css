@@ -1,52 +1,51 @@
-
 header {
-    display: grid;
-    grid-template: 50% 45% / 35% 65%;
-    gap: 5px;
+  display: grid;
+  grid-template: 50% 45% / 35% 65%;
+  gap: 5px;
 }
 
 header img {
-   height: 180px;
-   grid-area: 1/1/2/3;
-   image-rendering: pixelated;
+  height: 180px;
+  grid-area: 1/1/2/3;
+  image-rendering: pixelated;
 }
 
 header h1{
-    grid-area: 1/2/2/3;
-    text-align: justify;
-    margin-left: 35px;
-    margin-top: 20px;
-    font-weight: lighter;
-    font-size: 35px;
+  grid-area: 1/2/2/3;
+  text-align: justify;
+  margin-left: 35px;
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 35px;
 }
 
 header h2 {
-    grid-area: 2/2/3/3;
-    margin-left: 35px;
-    font-weight: lighter;
-    font-size: 25px;
+  grid-area: 2/2/3/3;
+  margin-left: 35px;
+  font-weight: lighter;
+  font-size: 25px;
 }
 header span {
-    font-family: digitaldisco;
+  font-family: digitaldisco;
 }
 article#contacts {
-    grid-area: 1/2/2/-1;
-   
+  grid-area: 1/2/2/-1;
+  
 }
 
 #contacts > h2 {
-    text-align:  center;
-    color: #BF93D8;
-    font-size: 28px;
-    margin-top: 20px;
-    font-weight: lighter;
+  text-align:  center;
+  color: #BF93D8;
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: lighter;
 }
 
 #contacts p {
-    font-family: digitaldisco;
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 15px; 
-    line-height: 20px;
-    
+  font-family: digitaldisco;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 15px; 
+  line-height: 20px;
+  
 }
